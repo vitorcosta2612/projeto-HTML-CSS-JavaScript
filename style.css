@@ -25,13 +25,8 @@
 }
 
 body {
-  /*
-  background-image: url(./assets/bg-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  */
   background: var(--bgurl) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -150,4 +145,14 @@ footer {
   padding: 24px;
   text-align: center;
   font-size: 14px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bgurl: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bgurl: url(./assets/bg-desktop-light.jpg);
+  }
 }
